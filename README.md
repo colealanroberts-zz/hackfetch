@@ -26,7 +26,7 @@ Every response returned to the API is done through using the `node-fetch` module
 
 ##### `.getTopItems()`
 
-Returns an array ids for the top 500 stories on HackerNews
+Returns an array ids for the top 500 items on HackerNews
 
 Example
 ```javascript
@@ -36,7 +36,7 @@ hnews.getTopItems().then(function(topItems) {
 ```
 ##### `.getNewsItems()`
 
-Returns an array ids for the top 500 news stories on HackerNews
+Returns an array ids for the top 500 news items on HackerNews
 
 Example
 ```javascript
@@ -46,7 +46,7 @@ hnews.getNewsItems().then(function(newsItems) {
 ```
 ##### `.getShowItems()`
 
-Returns an array ids for the top 500 showHN stories on HackerNews
+Returns an array ids for the top 500 showHN items on HackerNews
 
 Example
 ```javascript
@@ -56,7 +56,7 @@ hnews.getShowItems().then(function(showItems) {
 ```
 ##### `.getJobItems()`
 
-Returns an array ids for the top 500 job stories on HackerNews
+Returns an array ids for the top 500 job items on HackerNews
 
 Example
 ```javascript
@@ -68,14 +68,14 @@ hnews.getJobItems().then(function(jobsItems) {
 
 Requests an array of ids from one of 4 categories above.
 
-***@param {String}*** _category_ `required`  - The category to get stories from.
+***@param {String}*** _category_ `required`  - The category to get items from.
 
-**@param {Int}**  _numToGet_ `optional` - The number of items you'd like to receive starting from 0 -> Int. This is an optional param if no number is passed then return all results for the category chosen. This should be relatively quick even when requesting 500 stories.
+**@param {Int}**  _numToGet_ `optional` - The number of items you'd like to receive starting from 0 -> Int. This is an optional param if no number is passed then return all results for the category chosen. This should be relatively quick even when requesting 500 items.
 
 Example
 ```javascript
-hnews.getIdsInCategory('newstories', 100).then(function(firstOneHundredStories) {
-    console.log(firstOneHundredStories); // [0, 1, 2, ..., 99];
+hnews.getIdsInCategory('newstories', 100).then(function(firstOneHundredItems) {
+    console.log(firstOneHundredItems); // [0, 1, 2, ..., 99];
 });
 ```
 ##### `.getItemById(id)`
