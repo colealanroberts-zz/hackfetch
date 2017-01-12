@@ -81,7 +81,7 @@ hnews.getIdsInCategory('newstories', 100).then(function(firstOneHundredStories) 
 ##### `.getItemById(id)`
 This is a powerful method which can be used to look up anything found on HackerNews.
 > Stories, comments, jobs, Ask HNs and even polls are just items. They're identified by their ids, which are unique integers
- — HN Firebase documentation:
+ — HN Firebase documentation
 
 ***@param {Int}*** _id_ - The id of the item to be requested
 
