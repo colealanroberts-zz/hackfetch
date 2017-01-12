@@ -187,7 +187,7 @@ Please read submit a pull request or open an issue if you'd like to contribute a
 
 ## Dependencies
 
-`node-fech` - [https://www.npmjs.com/package/node-fetch](https://www.npmjs.com/package/node-fetch)
+`node-fetch` - [https://www.npmjs.com/package/node-fetch](https://www.npmjs.com/package/node-fetch)
 
 This is declared as a dependency in `package.json` and will be automatically installed.
 
