@@ -80,7 +80,7 @@ var hnews = function() {
         };
 
         /*
-        * @param {String} item_id - The story id details to be requested
+        * @param {Int} item_id - The story id details to be requested
         * @return returns the a Promise with the request users details
         * @example returned object
         * {
@@ -96,7 +96,6 @@ var hnews = function() {
           }
         */
         exports.getItemById = function(item_id) {
-            item = item_id.toString();
             var url = 'https://hacker-news.firebaseio.com/v0/item/' + item_id + '.json';
             return fetchReq(url);
         };
