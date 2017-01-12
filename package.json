@@ -1,0 +1,28 @@
+{
+  "name": "hackfetch-js",
+  "version": "0.0.1",
+  "description": "A Promise based Javascript wrapper for the HackerNews API",
+  "main": "hackfetch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colealanroberts/hackfetch.git"
+  },
+  "keywords": [
+    "hackernews",
+    "hn",
+    "yc",
+    "ycombinator",
+    "javascript",
+    "promise",
+    "api"
+  ],
+  "author": "Cole Alan Roberts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colealanroberts/hackfetch/issues"
+  },
+  "homepage": "https://github.com/colealanroberts/hackfetch#readme"
+}
