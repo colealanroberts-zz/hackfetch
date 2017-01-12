@@ -1,6 +1,6 @@
 # Hackfetch
 
-A Promise based Javascript wrapper for the HackerNews API. Follows all endpoints for the official [HackerNews Firebase API](https://github.com/HackerNews/API/).
+A Promise based Javascript wrapper for the HackerNews API. Hackfetch follows all endpoints for the official [HackerNews Firebase API](https://github.com/HackerNews/API/).
 
 
 
@@ -184,6 +184,12 @@ hnews.getUpdates().then(function(updates) {
 ## Contributing
 
 Please read submit a pull request or open an issue if you'd like to contribute and fix any bugs.
+
+## Dependencies
+
+`node-fech` - [https://www.npmjs.com/package/node-fetch](https://www.npmjs.com/package/node-fetch)
+
+This is declared as a dependency in `package.json` and will be automatically installed.
 
 ## Author
 Please feel free to contact me—
