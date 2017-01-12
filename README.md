@@ -8,12 +8,12 @@ A Promise based Javascript wrapper for the HackerNews API. Hackfetch follows all
 Installation is straightforward and simple.
 
 npm
-```
+```javascript
 npm install hackfetch-js
 ```
 
 NodeJS
-```
+```javascript
 var hnews = require('hackfetch-js');
 ```
 
