@@ -24,7 +24,7 @@ Every response returned to the API is done through using the `node-fetch` module
 ### Methods
 
 
-#### .getTopStories()
+##### `.getTopStories()`
 
 Returns an array ids for the top 500 stories on HackerNews
 
@@ -34,7 +34,7 @@ hnews.getTopStories().then(function(topStories) {
     console.log(topStories) // [0, 1, 2, ..., 499];
 });
 ```
-#### .getNewsStories()
+##### `.getNewsStories()`
 
 Returns an array ids for the top 500 news stories on HackerNews
 
@@ -44,7 +44,7 @@ hnews.getNewsStories().then(function(newsStories) {
     console.log(newsStories) // [0, 1, 2, ..., 499];
 });
 ```
-#### .getShowStories()
+##### `.getShowStories()`
 
 Returns an array ids for the top 500 showHN stories on HackerNews
 
@@ -54,7 +54,7 @@ hnews.getShowStories().then(function(showStories) {
     console.log(showStories) // [0, 1, 2, ..., 499];
 });
 ```
-#### .getJobStories()
+##### `.getJobStories()`
 
 Returns an array ids for the top 500 job stories on HackerNews
 
@@ -64,7 +64,7 @@ hnews.getJobStories().then(function(jobs) {
     console.log(jobs) // [1, 2, 3, ..., 500];
 });
 ```
-#### .getIdsInCategory(category, numToGet)
+#### `.getIdsInCategory(category, numToGet)`
 
 Requests an array of ids from one of 4 categories above.
 
@@ -78,7 +78,7 @@ hnews.getIdsInCategory('newstories', 100).then(function(firstOneHundredStories) 
     console.log(firstOneHundredStories); // [0, 1, 2, ..., 99];
 });
 ```
-#### .getItemById(id)
+##### `.getItemById(id)`
 This is a powerful method which can be used to look up anything found on HackerNews. From the HN Firebase documentation:
 > Stories, comments, jobs, Ask HNs and even polls are just items. They're identified by their ids, which are unique integers
 
@@ -153,7 +153,7 @@ hnews.getItemById(8863).then(function(item) {
 });
 ```
 
-#### getMaxItem()
+##### `getMaxItem()`
 The current largest item's id
 
 Example
@@ -163,7 +163,7 @@ hnews.getMaxItem().then(function(maxId) {
 });
 
 ```
-#### getUpdates()
+##### `getUpdates()`
 The item and profile changes
 ***@return*** Returns two arrays. One for item changes and another for profile changes.
 
