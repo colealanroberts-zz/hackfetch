@@ -30,8 +30,8 @@ Returns an array ids for the top 500 stories on HackerNews
 
 Example
 ```javascript
-hnews.getTopItems().then(function(topStories) {
-    console.log(topStories) // [0, 1, 2, ..., 499];
+hnews.getTopItems().then(function(topItems) {
+    console.log(topItems) // [0, 1, 2, ..., 499];
 });
 ```
 ##### `.getNewsItems()`
@@ -40,8 +40,8 @@ Returns an array ids for the top 500 news stories on HackerNews
 
 Example
 ```javascript
-hnews.getNewsItems().then(function(newsStories) {
-    console.log(newsStories) // [0, 1, 2, ..., 499];
+hnews.getNewsItems().then(function(newsItems) {
+    console.log(newsItems) // [0, 1, 2, ..., 499];
 });
 ```
 ##### `.getShowItems()`
@@ -50,8 +50,8 @@ Returns an array ids for the top 500 showHN stories on HackerNews
 
 Example
 ```javascript
-hnews.getShowItems().then(function(showStories) {
-    console.log(showStories) // [0, 1, 2, ..., 499];
+hnews.getShowItems().then(function(showItems) {
+    console.log(showItems) // [0, 1, 2, ..., 499];
 });
 ```
 ##### `.getJobItems()`
@@ -60,8 +60,8 @@ Returns an array ids for the top 500 job stories on HackerNews
 
 Example
 ```javascript
-hnews.getJobItems().then(function(jobsStories) {
-    console.log(jobsStories) // [1, 2, 3, ..., 500];
+hnews.getJobItems().then(function(jobsItems) {
+    console.log(jobsItems) // [1, 2, 3, ..., 500];
 });
 ```
 #### `.getIdsInCategory(category, numToGet)`
