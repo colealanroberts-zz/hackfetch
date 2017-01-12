@@ -193,7 +193,7 @@ This is declared as a dependency in `package.json` and will be automatically ins
 
 ## Author
 Please feel free to contact me—
-**Cole Alan Roberts**  [coleroberts.design](http://coleroberts.design/) or [@colealan](https://twitter.com/colealan)
+**Cole Alan Roberts**  via [coleroberts.design](http://coleroberts.design/) or [@colealan](https://twitter.com/colealan)
 
 ## License
 
