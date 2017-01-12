@@ -23,7 +23,6 @@ var hnews = function() {
             return fetchReq('https://hacker-news.firebaseio.com/v0/topstories.json');
         };
 
-
         /**
         * Requests 500 of the current NEWS stories
         * @return returns the a Promise with the stories in an array by id
@@ -52,7 +51,7 @@ var hnews = function() {
         };
 
         /**
-        * Requests data from one of 3 categories
+        * Requests an array of ids from one of 3 categories
         * @return returns a complete array with story information from a selected category
         * @param {String} category - The category to get stories from.
         *  This is an optional param if no category is passed then automatically get  topstories.json
@@ -61,26 +60,26 @@ var hnews = function() {
         * this may be slow...
         * @example arr = [1337905, 137906, 11376777, ...];
         */
-        exports.getDataForCategory = function(category, numToGet) {
+        exports.getIdsInCategory = function(category, numToGet) {
             numToGet = numToGet || 500;
 
             if (arguments.length === 2) {
+                var num;
                 if (numToGet === 500) {
                     console.warn('Gather information for 500 stories is very slow. Consider lowering the number to return');
-                    numToGet = numToGet.toString();
-                    return fetchReq('https://hacker-news.firebaseio.com/v0/' + category + '.json?orderBy=$key&limitToFirst=' + num);
+                    num = numToGet.toString();
+                    console.log(category);
+                    return fetchReq('https://hacker-news.firebaseio.com/v0/' + category + '.json?orderBy="$key"&limitToFirst=' + num);
                 } else {
-                    numToGet = numToGet.toString();
-                    return fetchReq('https://hacker-news.firebaseio.com/v0/' + category + '.json?orderBy=$key&limitToFirst=' + num);
+                    num = numToGet.toString();
+                    return fetchReq('https://hacker-news.firebaseio.com/v0/' + category + '.json?orderBy="$key"&limitToFirst=' + num);
                 }
             } else {
-                throw Error('You must pass 2 arguments to getDataForCategory. Please see http://hackdot.co/developers#getDataForCategory');
+                throw Error('You must pass 2 arguments to getIdsInCategory. Please see http://hackdot.co/developers#getDataForCategory');
             }
         };
 
-        /**
-        * Returns details of a story
-        *
+        /*
         * @param {String} item_id - The story id details to be requested
         * @return returns the a Promise with the request users details
         * @example returned object
@@ -96,7 +95,7 @@ var hnews = function() {
               "url" : "http://www.getdropbox.com/u/2/screencast.html"
           }
         */
-        exports.getItem = function(item_id) {
+        exports.getItemById = function(item_id) {
             item = item_id.toString();
             var url = 'https://hacker-news.firebaseio.com/v0/item/' + item_id + '.json';
             return fetchReq(url);
