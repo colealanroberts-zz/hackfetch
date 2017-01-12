@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/colealanroberts/hackfetch/issues"
   },
-  "homepage": "https://github.com/colealanroberts/hackfetch#readme"
+  "homepage": "https://github.com/colealanroberts/hackfetch#readme",
+  "dependencies": {
+    "node-fetch": "^1.6.3"
+  }
 }
