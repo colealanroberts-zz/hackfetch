@@ -24,7 +24,7 @@ Every response returned to the API is done through using the `node-fetch` module
 ### Methods
 
 
-##### `.getTopStories()`
+##### `.getTopItems()`
 
 Returns an array ids for the top 500 stories on HackerNews
 
@@ -34,7 +34,7 @@ hnews.getTopStories().then(function(topStories) {
     console.log(topStories) // [0, 1, 2, ..., 499];
 });
 ```
-##### `.getNewsStories()`
+##### `.getNewsItems()`
 
 Returns an array ids for the top 500 news stories on HackerNews
 
@@ -44,7 +44,7 @@ hnews.getNewsStories().then(function(newsStories) {
     console.log(newsStories) // [0, 1, 2, ..., 499];
 });
 ```
-##### `.getShowStories()`
+##### `.getShowItems()`
 
 Returns an array ids for the top 500 showHN stories on HackerNews
 
@@ -54,7 +54,7 @@ hnews.getShowStories().then(function(showStories) {
     console.log(showStories) // [0, 1, 2, ..., 499];
 });
 ```
-##### `.getJobStories()`
+##### `.getJobItems()`
 
 Returns an array ids for the top 500 job stories on HackerNews
 

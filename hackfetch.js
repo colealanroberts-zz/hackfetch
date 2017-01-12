@@ -19,7 +19,7 @@ var hnews = function() {
         * @return returns the a Promise with the stories in an array by id
         * @example arr = [1337905, 137906, 11376777, ...];
         */
-        exports.getTopStories = function() {
+        exports.getTopItems = function() {
             return fetchReq('https://hacker-news.firebaseio.com/v0/topstories.json');
         };
 
@@ -28,7 +28,7 @@ var hnews = function() {
         * @return returns the a Promise with the stories in an array by id
         * @example arr = [1337905, 137906, 11376777, ...];
         */
-        exports.getNewsStories = function() {
+        exports.getNewsItems = function() {
             return fetchReq('https://hacker-news.firebaseio.com/v0/newstories.json');
         };
 
@@ -37,7 +37,7 @@ var hnews = function() {
         * @return returns the a Promise with the stories in an array by id
         * @example arr = [1337905, 137906, 11376777, ...];
         */
-        exports.getShowStories = function() {
+        exports.getShowItem = function() {
             return fetchReq('https://hacker-news.firebaseio.com/v0/showstories.json');
         };
 
@@ -46,7 +46,7 @@ var hnews = function() {
         * @return returns the a Promise with the stories in an array by id
         * @example arr = [1337905, 137906, 11376777, ...];
         */
-        exports.getJobStories = function() {
+        exports.getJobItems = function() {
             return fetchReq('https://hacker-news.firebaseio.com/v0/jobstories.json');
         };
 
