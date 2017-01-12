@@ -164,7 +164,9 @@ hnews.getMaxItem().then(function(maxId) {
 
 ```
 ##### `getUpdates()`
+
 The item and profile changes
+
 ***@return*** Returns two arrays. One for item changes and another for profile changes.
 
 Example
