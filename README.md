@@ -30,7 +30,7 @@ Returns an array ids for the top 500 stories on HackerNews
 
 Example
 ```javascript
-hnews.getTopStories().then(function(topStories) {
+hnews.getTopItems().then(function(topStories) {
     console.log(topStories) // [0, 1, 2, ..., 499];
 });
 ```
@@ -40,7 +40,7 @@ Returns an array ids for the top 500 news stories on HackerNews
 
 Example
 ```javascript
-hnews.getNewsStories().then(function(newsStories) {
+hnews.getNewsItems().then(function(newsStories) {
     console.log(newsStories) // [0, 1, 2, ..., 499];
 });
 ```
@@ -50,7 +50,7 @@ Returns an array ids for the top 500 showHN stories on HackerNews
 
 Example
 ```javascript
-hnews.getShowStories().then(function(showStories) {
+hnews.getShowItems().then(function(showStories) {
     console.log(showStories) // [0, 1, 2, ..., 499];
 });
 ```
@@ -60,7 +60,7 @@ Returns an array ids for the top 500 job stories on HackerNews
 
 Example
 ```javascript
-hnews.getJobStories().then(function(jobsStories) {
+hnews.getJobItems().then(function(jobsStories) {
     console.log(jobsStories) // [1, 2, 3, ..., 500];
 });
 ```
