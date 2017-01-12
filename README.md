@@ -179,7 +179,7 @@ hnews.getUpdates().then(function(updates) {
 
 ## Powering
 
-[Hackdot API](http://api.hack.co/) - A _free_ RESTful API powering data for the iOS client, Hackdot.
+[Hackdot API](http://hackdot.co/developers) - A _free_ RESTful API powering data for the iOS client, Hackdot.
 
 ## Contributing
 
