@@ -34,14 +34,14 @@ hnews.getTopItems().then(function(topItems) {
     console.log(topItems) // [0, 1, 2, ..., 499];
 });
 ```
-##### `.getNewsItems()`
+##### `.getNewItems()`
 
-Returns an array ids for the top 500 news items on HackerNews
+Returns an array ids for the 500 newest items on HackerNews
 
 Example
 ```javascript
-hnews.getNewsItems().then(function(newsItems) {
-    console.log(newsItems) // [0, 1, 2, ..., 499];
+hnews.getNewItems().then(function(newItems) {
+    console.log(newItems) // [0, 1, 2, ..., 499];
 });
 ```
 ##### `.getShowItems()`

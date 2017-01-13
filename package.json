@@ -1,6 +1,6 @@
 {
   "name": "hackfetch-js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A Promise based Javascript wrapper for the HackerNews API",
   "main": "hackfetch.js",
   "scripts": {

@@ -28,7 +28,7 @@ var hnews = function() {
         * @return returns the a Promise with the stories in an array by id
         * @example arr = [1337905, 137906, 11376777, ...];
         */
-        exports.getNewsItems = function() {
+        exports.getNewItems = function() {
             return fetchReq('https://hacker-news.firebaseio.com/v0/newstories.json');
         };
 
@@ -37,7 +37,7 @@ var hnews = function() {
         * @return returns the a Promise with the stories in an array by id
         * @example arr = [1337905, 137906, 11376777, ...];
         */
-        exports.getShowItem = function() {
+        exports.getShowItems = function() {
             return fetchReq('https://hacker-news.firebaseio.com/v0/showstories.json');
         };
 
