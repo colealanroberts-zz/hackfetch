@@ -61,7 +61,7 @@ Returns an array ids for the top 500 job items on HackerNews
 Example
 ```javascript
 hnews.getJobItems().then(function(jobsItems) {
-    console.log(jobsItems) // [1, 2, 3, ..., 500];
+    console.log(jobsItems) // [0, 1, 2, ..., 499];
 });
 ```
 #### `.getIdsInCategory(category, numToGet)`
