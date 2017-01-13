@@ -68,7 +68,7 @@ hnews.getJobItems().then(function(jobsItems) {
 
 Requests an array of ids from one of 5 categories.
 
-Categories: `newstories`, `beststories`, `askstories`, `showstories`, `jobstories`
+Categories: `topstories`, `newstories`, `beststories`, `askstories`, `showstories`, `jobstories`
 
 ***@param {String}*** _category_ `required`  - The category to get items from.
 
