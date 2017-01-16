@@ -19,7 +19,7 @@ var hnews = require('hackfetch-js');
 
 ## API Usage
 
-Each response from the HN API is done using the `node-fetch` module and is returned as a Promise.
+Each response from the HN API is made using the `node-fetch` module and is returned as a Promise.
 
 ### Methods
 
