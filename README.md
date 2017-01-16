@@ -19,7 +19,7 @@ var hnews = require('hackfetch-js');
 
 ## API Usage
 
-Every response returned to the API is done through using the `node-fetch` module and is returned as a Promise.
+Each response from the HN API is done using the `node-fetch` module and is returned as a Promise.
 
 ### Methods
 
@@ -72,7 +72,7 @@ Categories: `topstories`, `newstories`, `beststories`, `askstories`, `showstorie
 
 ***@param {String}*** _category_ `required`  - The category to get items from.
 
-**@param {Int}**  _numToGet_ `optional` - The number of items you'd like to receive starting from 0 -> Int. This is an optional param if no number is passed then return all results for the category chosen. This should be relatively quick even when requesting 500 items.
+**@param {Int}**  _numToGet_ `optional` - The number of items you'd like to receive starting from 0 -> Int. This is an optional param if no number is passed then return all results for the chosen category. This function should be relatively quick even when requesting 500 items.
 
 Example
 ```javascript
