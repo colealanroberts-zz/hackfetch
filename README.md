@@ -188,7 +188,7 @@ hnews.getUpdates().then(function(updates) {
 
 ## Contributing
 
-Please read submit a pull request or open an issue if you'd like to contribute and fix any bugs.
+Please submit a pull request or open an issue if you'd like to add a feature or fix any bugs.
 
 ## Dependencies
 
