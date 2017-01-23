@@ -55,7 +55,7 @@ hnews.getShowItems().then(function(showItems) {
 });
 ```
 
-##### `.getAsktems()`
+##### `.getAskItems()`
 
 Returns an array ids for the top 500 ask items on HackerNews
 
