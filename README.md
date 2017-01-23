@@ -54,6 +54,18 @@ hnews.getShowItems().then(function(showItems) {
     console.log(showItems) // [0, 1, 2, ..., 499];
 });
 ```
+
+##### `.getAsktems()`
+
+Returns an array ids for the top 500 job items on HackerNews
+
+Example
+```javascript
+hnews.getAskItems().then(function(askItems) {
+    console.log(jobsItems) // [0, 1, 2, ..., 499];
+});
+```
+
 ##### `.getJobItems()`
 
 Returns an array ids for the top 500 job items on HackerNews
