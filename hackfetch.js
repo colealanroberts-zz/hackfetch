@@ -15,7 +15,7 @@ var hnews = function() {
         };
 
         /**
-        * Requests 500 of the current TOP stories
+        * Requests up to 500 of the current top items
         * @return returns the a Promise with the stories in an array by id
         * @example arr = [1337905, 137906, 11376777, ...];
         */
@@ -24,7 +24,7 @@ var hnews = function() {
         };
 
         /**
-        * Requests 500 of the current NEWS stories
+        * Requests up to 500 of the current new items
         * @return returns the a Promise with the stories in an array by id
         * @example arr = [1337905, 137906, 11376777, ...];
         */
@@ -33,16 +33,25 @@ var hnews = function() {
         };
 
         /**
-        * Requests 500 of the current SHOW stories
+        * Requests up to 500 of the current show items
         * @return returns the a Promise with the stories in an array by id
         * @example arr = [1337905, 137906, 11376777, ...];
         */
         exports.getShowItems = function() {
             return fetchReq('https://hacker-news.firebaseio.com/v0/showstories.json');
         };
+        
+        /**
+        * Requests up to 500 of the current ask items
+        * @return returns the a Promise with the stories in an array by id
+        * @example arr = [1337905, 137906, 11376777, ...];
+        */
+        exports.getAskItems = function() {
+            return fetchReq('https://hacker-news.firebaseio.com/v0/askstories.json');
+        }
 
         /**
-        * Requests 500 of the current JOB stories
+        * Requests up to 500 of the current job items
         * @return returns the a Promise with the stories in an array by id
         * @example arr = [1337905, 137906, 11376777, ...];
         */
