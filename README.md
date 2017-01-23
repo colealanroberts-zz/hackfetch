@@ -57,7 +57,7 @@ hnews.getShowItems().then(function(showItems) {
 
 ##### `.getAsktems()`
 
-Returns an array ids for the top 500 job items on HackerNews
+Returns an array ids for the top 500 ask items on HackerNews
 
 Example
 ```javascript
